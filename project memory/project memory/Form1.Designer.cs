@@ -66,6 +66,7 @@
             this.cardbtn3.TabIndex = 2;
             this.cardbtn3.Text = "button3";
             this.cardbtn3.UseVisualStyleBackColor = true;
+            this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
             // 
             // cardbtn4
             // 

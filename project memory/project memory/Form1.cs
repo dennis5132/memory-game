@@ -13,7 +13,21 @@ namespace project_memory
     
     public partial class Form1 : Form
     {
-        float cardcheck = 0;
+        private float cardCheck = 0f;
+        private void Cardturn(Button btn)
+        {
+            
+            cardCheck += 1f;
+            if (cardCheck == 3f)
+            {
+                cardCheck = 0f;
+                cardbtn1.BackgroundImage = null;
+                cardbtn2.BackgroundImage = null;
+                cardbtn3.BackgroundImage = null;
+            }
+            btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+        }
+
 
         public Form1()
         {
@@ -22,15 +36,18 @@ namespace project_memory
 
         private void cardClick1(object sender, EventArgs e)
         {
-            cardbtn1.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
-
-          
+            Cardturn(cardbtn1);
         }
 
         private void cardbtn2_Click(object sender, EventArgs e)
         {
-            cardbtn2.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+            Cardturn(cardbtn2);
         }
+        private void cardbtn3_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn3);
+        }
+
         
     }
 }
