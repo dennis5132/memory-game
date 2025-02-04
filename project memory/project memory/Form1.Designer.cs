@@ -76,6 +76,7 @@
             this.cardbtn4.TabIndex = 3;
             this.cardbtn4.Text = "button4";
             this.cardbtn4.UseVisualStyleBackColor = true;
+            this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
             // 
             // cardbtn5
             // 
@@ -85,6 +86,7 @@
             this.cardbtn5.TabIndex = 4;
             this.cardbtn5.Text = "button5";
             this.cardbtn5.UseVisualStyleBackColor = true;
+            this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
             // 
             // cardbtn6
             // 
@@ -94,6 +96,7 @@
             this.cardbtn6.TabIndex = 5;
             this.cardbtn6.Text = "button6";
             this.cardbtn6.UseVisualStyleBackColor = true;
+            this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
             // 
             // cardbtn7
             // 
@@ -103,6 +106,7 @@
             this.cardbtn7.TabIndex = 6;
             this.cardbtn7.Text = "button7";
             this.cardbtn7.UseVisualStyleBackColor = true;
+            this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
             // 
             // cardbtn8
             // 
@@ -112,6 +116,7 @@
             this.cardbtn8.TabIndex = 7;
             this.cardbtn8.Text = "button8";
             this.cardbtn8.UseVisualStyleBackColor = true;
+            this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
             // 
             // Form1
             // 

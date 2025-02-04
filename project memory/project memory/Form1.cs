@@ -18,12 +18,17 @@ namespace project_memory
         {
             
             cardCheck += 1f;
-            if (cardCheck == 3f)
+            if (cardCheck >= 2f)
             {
                 cardCheck = 0f;
                 cardbtn1.BackgroundImage = null;
                 cardbtn2.BackgroundImage = null;
                 cardbtn3.BackgroundImage = null;
+                cardbtn4.BackgroundImage = null;
+                cardbtn5.BackgroundImage = null;
+                cardbtn6.BackgroundImage = null;
+                cardbtn7.BackgroundImage = null;
+                cardbtn8.BackgroundImage = null;
             }
             btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
         }
@@ -47,7 +52,29 @@ namespace project_memory
         {
             Cardturn(cardbtn3);
         }
+        private void cardbtn4_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn4);
+        }
 
-        
+        private void cardbtn5_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn5);
+        }
+
+        private void cardbtn6_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn6);
+        }
+
+        private void cardbtn7_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn7);
+        }
+
+        private void cardbtn8_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn8);
+        }
     }
 }
