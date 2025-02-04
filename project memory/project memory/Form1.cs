@@ -14,6 +14,17 @@ namespace project_memory
     public partial class Form1 : Form
     {
         private float cardCheck = 0f;
+        //string[] cardnumbers = ["cardbtn1","cardbtn2","cardbtn3",, "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8"];
+        //string[] cardpictures = [];
+
+        public string cardpic1 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic2 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic3 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic4 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic5 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic6 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic7 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        public string cardpic8 = "Verdwijnt_de_koe_uit_ons_landschap_";
         private void Cardturn(Button btn)
         {
             
@@ -37,6 +48,7 @@ namespace project_memory
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void cardClick1(object sender, EventArgs e)
