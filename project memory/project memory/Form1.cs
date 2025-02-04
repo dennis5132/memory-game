@@ -14,17 +14,14 @@ namespace project_memory
     public partial class Form1 : Form
     {
         private float cardCheck = 0f;
-        //string[] cardnumbers = ["cardbtn1","cardbtn2","cardbtn3",, "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8"];
-        //string[] cardpictures = [];
+        string[] cardnumbers = { "cardbtn1", "cardbtn2", "cardbtn3", "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8" };
+        string[] cardpictures = {"Verdwijnt_de_koe_uit_ons_landschap_", "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans", "Dries_en_ik___Verhalen_van_vroege_r_", "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans", "Verdwijnt_de_koe_uit_ons_landschap_", "Goofy_Horse___Horses__Animals__Roman", "Dries_en_ik___Verhalen_van_vroege_r_", "Goofy_Horse___Horses__Animals__Roman" };
 
-        public string cardpic1 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic2 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic3 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic4 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic5 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic6 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic7 = "Verdwijnt_de_koe_uit_ons_landschap_";
-        public string cardpic8 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        //public string cardpic1 = "Verdwijnt_de_koe_uit_ons_landschap_";
+        //public string cardpic2 = "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans";
+        //public string cardpic3 = "Dries_en_ik___Verhalen_van_vroege_r_";
+        //public string cardpic4 = "Goofy_Horse___Horses__Animals__Roman";
+      
         private void Cardturn(Button btn)
         {
             
@@ -40,6 +37,14 @@ namespace project_memory
                 cardbtn6.BackgroundImage = null;
                 cardbtn7.BackgroundImage = null;
                 cardbtn8.BackgroundImage = null;
+            }
+            for (int i = 0; i < cardnumbers.Length; i++) 
+            {
+                if (cardnumbers[i] == btn.ToString()) 
+                {
+                    string currentpicture = cardpictures[i];
+                    //btn.BackgroundImage = Properties.Resources.currentpicture;
+                }
             }
             btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
         }
