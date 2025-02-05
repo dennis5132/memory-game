@@ -15,7 +15,7 @@ namespace project_memory
     {
         private float cardCheck = 0f;
         string[] cardnumbers = { "cardbtn1", "cardbtn2", "cardbtn3", "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8" };
-        string[] cardpictures = {"Verdwijnt_de_koe_uit_ons_landschap_", "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans", "Dries_en_ik___Verhalen_van_vroege_r_", "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans", "Verdwijnt_de_koe_uit_ons_landschap_", "Goofy_Horse___Horses__Animals__Roman", "Dries_en_ik___Verhalen_van_vroege_r_", "Goofy_Horse___Horses__Animals__Roman" };
+        int[] cardpictures = {1, 3, 2, 1, 3, 4, 2, 4 };
 
         //public string cardpic1 = "Verdwijnt_de_koe_uit_ons_landschap_";
         //public string cardpic2 = "Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans";
@@ -38,15 +38,21 @@ namespace project_memory
                 cardbtn7.BackgroundImage = null;
                 cardbtn8.BackgroundImage = null;
             }
+
             for (int i = 0; i < cardnumbers.Length; i++) 
             {
-                if (cardnumbers[i] == btn.ToString()) 
+                if (cardnumbers[i] == btn.ToString())
                 {
-                    string currentpicture = cardpictures[i];
-                    //btn.BackgroundImage = Properties.Resources.currentpicture;
+
+                    if (cardpictures[i] == 1)
+                    {
+                        btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+                    }
+
+
                 }
             }
-            btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+            //btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
         }
 
 
