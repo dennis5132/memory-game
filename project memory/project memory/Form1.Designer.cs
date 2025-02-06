@@ -133,6 +133,7 @@
             this.Controls.Add(this.cardbtn1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Activated += new System.EventHandler(this.Form1_Activated);
             this.ResumeLayout(false);
 
         }
