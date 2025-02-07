@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.cardbtn1 = new System.Windows.Forms.Button();
             this.cardbtn2 = new System.Windows.Forms.Button();
             this.cardbtn3 = new System.Windows.Forms.Button();
@@ -36,6 +37,7 @@
             this.cardbtn6 = new System.Windows.Forms.Button();
             this.cardbtn7 = new System.Windows.Forms.Button();
             this.cardbtn8 = new System.Windows.Forms.Button();
+            this.resetTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // cardbtn1
@@ -44,7 +46,6 @@
             this.cardbtn1.Name = "cardbtn1";
             this.cardbtn1.Size = new System.Drawing.Size(111, 96);
             this.cardbtn1.TabIndex = 0;
-            this.cardbtn1.Text = "button1";
             this.cardbtn1.UseVisualStyleBackColor = true;
             this.cardbtn1.Click += new System.EventHandler(this.cardClick1);
             // 
@@ -54,7 +55,6 @@
             this.cardbtn2.Name = "cardbtn2";
             this.cardbtn2.Size = new System.Drawing.Size(110, 97);
             this.cardbtn2.TabIndex = 1;
-            this.cardbtn2.Text = "button2";
             this.cardbtn2.UseVisualStyleBackColor = true;
             this.cardbtn2.Click += new System.EventHandler(this.cardbtn2_Click);
             // 
@@ -64,7 +64,6 @@
             this.cardbtn3.Name = "cardbtn3";
             this.cardbtn3.Size = new System.Drawing.Size(105, 96);
             this.cardbtn3.TabIndex = 2;
-            this.cardbtn3.Text = "button3";
             this.cardbtn3.UseVisualStyleBackColor = true;
             this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
             // 
@@ -74,7 +73,6 @@
             this.cardbtn4.Name = "cardbtn4";
             this.cardbtn4.Size = new System.Drawing.Size(100, 89);
             this.cardbtn4.TabIndex = 3;
-            this.cardbtn4.Text = "button4";
             this.cardbtn4.UseVisualStyleBackColor = true;
             this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
             // 
@@ -84,7 +82,6 @@
             this.cardbtn5.Name = "cardbtn5";
             this.cardbtn5.Size = new System.Drawing.Size(110, 89);
             this.cardbtn5.TabIndex = 4;
-            this.cardbtn5.Text = "button5";
             this.cardbtn5.UseVisualStyleBackColor = true;
             this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
             // 
@@ -94,7 +91,6 @@
             this.cardbtn6.Name = "cardbtn6";
             this.cardbtn6.Size = new System.Drawing.Size(105, 89);
             this.cardbtn6.TabIndex = 5;
-            this.cardbtn6.Text = "button6";
             this.cardbtn6.UseVisualStyleBackColor = true;
             this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
             // 
@@ -104,7 +100,6 @@
             this.cardbtn7.Name = "cardbtn7";
             this.cardbtn7.Size = new System.Drawing.Size(98, 87);
             this.cardbtn7.TabIndex = 6;
-            this.cardbtn7.Text = "button7";
             this.cardbtn7.UseVisualStyleBackColor = true;
             this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
             // 
@@ -114,9 +109,13 @@
             this.cardbtn8.Name = "cardbtn8";
             this.cardbtn8.Size = new System.Drawing.Size(98, 88);
             this.cardbtn8.TabIndex = 7;
-            this.cardbtn8.Text = "button8";
             this.cardbtn8.UseVisualStyleBackColor = true;
             this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
+            // 
+            // resetTimer
+            // 
+            this.resetTimer.Interval = 1;
+            this.resetTimer.Tick += new System.EventHandler(this.resetTimer_Tick);
             // 
             // Form1
             // 
@@ -148,6 +147,7 @@
         private System.Windows.Forms.Button cardbtn6;
         private System.Windows.Forms.Button cardbtn7;
         private System.Windows.Forms.Button cardbtn8;
+        private System.Windows.Forms.Timer resetTimer;
     }
 }
 

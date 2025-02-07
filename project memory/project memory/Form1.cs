@@ -26,7 +26,8 @@ namespace project_memory
         public int pictureTwo;
 
         Random random = new Random();
-        
+        int timerLength = 0;
+
 
         private void resetCard(Button thisB)
         {
@@ -47,24 +48,22 @@ namespace project_memory
                 firstpicture = btn;
             }
             
-                if (cardCheck > 2f) //als er te veel kaarten zijn omgedraaid gaan alle kaarten uit
-                {
-                   cardCheck = 1f; //er is hierna een kaart over
-                   firstpicture = btn; // stel deze kaart in als firstpicture
+            if (cardCheck > 2f) //als er te veel kaarten zijn omgedraaid gaan alle kaarten uit
+            {
+               cardCheck = 1f; //er is hierna een kaart over
+               firstpicture = btn; // stel deze kaart in als firstpicture
 
-                    //if (correct.Contains(cardbtn1) == false)
-                    //{ 
-                    //    cardbtn1.BackgroundImage = null;
-                    //}
-                    resetCard(cardbtn1);
-                    resetCard(cardbtn2);
-                    resetCard(cardbtn3);
-                    resetCard(cardbtn4);
-                    resetCard(cardbtn5);
-                    resetCard(cardbtn6);
-                    resetCard(cardbtn7);
-                    resetCard(cardbtn8);
-                }
+                resetCard(cardbtn1);
+                resetCard(cardbtn2);
+                resetCard(cardbtn3);
+                resetCard(cardbtn4);
+                resetCard(cardbtn5);
+                resetCard(cardbtn6);
+                resetCard(cardbtn7);
+                resetCard(cardbtn8);
+            }
+
+
 
             for (int i = 0; i < cardnumbers.Length; i++) //voor elk lid in cardnumbers
             {
@@ -87,6 +86,7 @@ namespace project_memory
                     {
                         btn.BackgroundImage = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
                     }
+
                     if (cardCheck == 1)
                     {
                         pictureOne = cardpictures[i];
@@ -106,6 +106,7 @@ namespace project_memory
                     correct.Add(btn);
                     correct.Add(firstpicture);
                 }
+                resetTimer.Start();
             }
             }
         }
@@ -164,6 +165,26 @@ namespace project_memory
             Cardturn(cardbtn8);
         }
 
-        
+        private void resetTimer_Tick(object sender, EventArgs e)
+        {
+            timerLength += 1;
+            if (timerLength == 170)
+            {
+
+                cardCheck = 1f;
+
+                resetCard(cardbtn1);
+                resetCard(cardbtn2);
+                resetCard(cardbtn3);
+                resetCard(cardbtn4);
+                resetCard(cardbtn5);
+                resetCard(cardbtn6);
+                resetCard(cardbtn7);
+                resetCard(cardbtn8);
+
+                timerLength = 0;
+                resetTimer.Stop();
+            }
+        }
     }
 }
