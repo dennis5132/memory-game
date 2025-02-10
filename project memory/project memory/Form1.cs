@@ -214,7 +214,7 @@ namespace project_memory
         private void endTimer_Tick(object sender, EventArgs e)
         {
             timerLength += 1;
-            if (timerLength == 5)
+            if (timerLength == 1)
             {
                 Application.Exit();
             }

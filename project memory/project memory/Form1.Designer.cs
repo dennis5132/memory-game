@@ -163,6 +163,10 @@
             this.currentTurnLabel.TabIndex = 17;
             this.currentTurnLabel.Text = "label2";
             // 
+            // endTimer
+            // 
+            this.endTimer.Tick += new System.EventHandler(this.endTimer_Tick);
+            // 
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
