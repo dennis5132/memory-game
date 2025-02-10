@@ -38,7 +38,6 @@
             this.cardbtn6 = new System.Windows.Forms.PictureBox();
             this.cardbtn7 = new System.Windows.Forms.PictureBox();
             this.cardbtn8 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.currentTurnLabel = new System.Windows.Forms.Label();
             this.endTimer = new System.Windows.Forms.Timer(this.components);
             this.pointsLabel = new System.Windows.Forms.Label();
@@ -153,23 +152,15 @@
             this.cardbtn8.TabStop = false;
             this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(691, 318);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "label1";
-            // 
             // currentTurnLabel
             // 
             this.currentTurnLabel.AutoSize = true;
-            this.currentTurnLabel.Location = new System.Drawing.Point(49, 69);
+            this.currentTurnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.currentTurnLabel.Location = new System.Drawing.Point(27, 12);
             this.currentTurnLabel.Name = "currentTurnLabel";
-            this.currentTurnLabel.Size = new System.Drawing.Size(44, 16);
+            this.currentTurnLabel.Size = new System.Drawing.Size(86, 32);
             this.currentTurnLabel.TabIndex = 17;
-            this.currentTurnLabel.Text = "label2";
+            this.currentTurnLabel.Text = "turn 1";
             // 
             // endTimer
             // 
@@ -178,11 +169,12 @@
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
-            this.pointsLabel.Location = new System.Drawing.Point(724, 110);
+            this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pointsLabel.Location = new System.Drawing.Point(678, 12);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(44, 16);
+            this.pointsLabel.Size = new System.Drawing.Size(114, 32);
             this.pointsLabel.TabIndex = 18;
-            this.pointsLabel.Text = "label2";
+            this.pointsLabel.Text = "0 points";
             // 
             // Form1
             // 
@@ -191,7 +183,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.currentTurnLabel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.cardbtn8);
             this.Controls.Add(this.cardbtn7);
             this.Controls.Add(this.cardbtn6);
@@ -226,7 +217,6 @@
         private System.Windows.Forms.PictureBox cardbtn6;
         private System.Windows.Forms.PictureBox cardbtn7;
         private System.Windows.Forms.PictureBox cardbtn8;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label currentTurnLabel;
         private System.Windows.Forms.Timer endTimer;
         private System.Windows.Forms.Label pointsLabel;
