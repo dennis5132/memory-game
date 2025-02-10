@@ -30,6 +30,8 @@ namespace project_memory
         int timerLength = 0;
         SoundPlayer player = new SoundPlayer();
 
+        public int currentTurn = 1;
+        public int currentPoints = 0;
 
         private void resetCard(Button thisB)
         {
@@ -68,6 +70,8 @@ namespace project_memory
                   resetCard(cardbtn6);
                   resetCard(cardbtn7);
                   resetCard(cardbtn8);
+                 currentTurn += 1;
+                 currentTurnLabel.Text = "turn " + currentTurn.ToString();
               }
 
 
@@ -107,13 +111,21 @@ namespace project_memory
 
               if (cardCheck == 2f)
               {
-                  
-                  if (pictureOne == pictureTwo)
-                  {
-                      correct.Add(btn);
-                      correct.Add(firstpicture);
-                    player.Stream = Properties.Resources.rightanswer_95219;
-                    player.Play();
+
+                    if (pictureOne == pictureTwo)
+                    {
+                        correct.Add(btn);
+                        correct.Add(firstpicture);
+                        player.Stream = Properties.Resources.rightanswer_95219;
+                        player.Play();
+                        currentPoints++;
+                        pointsLabel.Text = currentPoints.ToString() + " points";
+                        if (correct.Count == 8)
+                        {
+                            timerLength = 0;
+                            endTimer.Start();
+                            
+                        }
                     }
                     resetTimer.Start();
                 }
@@ -193,6 +205,18 @@ namespace project_memory
 
                 timerLength = 0;
                 resetTimer.Stop();
+
+                currentTurn += 1;
+                currentTurnLabel.Text = "turn " + currentTurn.ToString();
+            }
+        }
+
+        private void endTimer_Tick(object sender, EventArgs e)
+        {
+            timerLength += 1;
+            if (timerLength == 5)
+            {
+                Application.Exit();
             }
         }
     }
