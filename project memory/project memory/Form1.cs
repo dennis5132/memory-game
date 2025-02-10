@@ -37,7 +37,7 @@ namespace project_memory
         {
             if (correct.Contains(thisB) == false)
             {
-                thisB.BackgroundImage = null;
+                thisB.Image = null;
             }
         }
         private void Cardturn(PictureBox btn) //activeert als er op een knop wordt gedrukt
@@ -83,19 +83,19 @@ namespace project_memory
 
                         if (cardpictures[i] == 1) //...wordt het plaatje van het bijbehorende nummer in cardpictures laten zien
                         {
-                            btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+                            btn.Image = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
                         }
                         if (cardpictures[i] == 2)
                         {
-                            btn.BackgroundImage = Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
+                            btn.Image = Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
                         }
                         if (cardpictures[i] == 3)
                         {
-                            btn.BackgroundImage = Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
+                            btn.Image = Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
                         }
                         if (cardpictures[i] == 4)
                         {
-                            btn.BackgroundImage = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
+                            btn.Image = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
                         }
 
                         if (cardCheck == 1)

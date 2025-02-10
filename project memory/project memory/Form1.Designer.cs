@@ -60,95 +60,95 @@
             // cardbtn1
             // 
             this.cardbtn1.AccessibleName = "pbx1";
-            this.cardbtn1.Image = global::project_memory.Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
             this.cardbtn1.Location = new System.Drawing.Point(147, 34);
             this.cardbtn1.Name = "cardbtn1";
             this.cardbtn1.Size = new System.Drawing.Size(150, 130);
             this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn1.TabIndex = 8;
             this.cardbtn1.TabStop = false;
+            this.cardbtn1.Click += new System.EventHandler(this.cardClick1);
             // 
             // cardbtn2
             // 
             this.cardbtn2.AccessibleName = "pbx2";
-            this.cardbtn2.Image = global::project_memory.Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
             this.cardbtn2.Location = new System.Drawing.Point(522, 12);
             this.cardbtn2.Name = "cardbtn2";
             this.cardbtn2.Size = new System.Drawing.Size(150, 130);
             this.cardbtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn2.TabIndex = 9;
             this.cardbtn2.TabStop = false;
+            this.cardbtn2.Click += new System.EventHandler(this.cardbtn2_Click);
             // 
             // cardbtn3
             // 
             this.cardbtn3.AccessibleName = "pbx3";
-            this.cardbtn3.Image = global::project_memory.Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
             this.cardbtn3.Location = new System.Drawing.Point(336, 12);
             this.cardbtn3.Name = "cardbtn3";
             this.cardbtn3.Size = new System.Drawing.Size(150, 130);
             this.cardbtn3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn3.TabIndex = 10;
             this.cardbtn3.TabStop = false;
+            this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
             // 
             // cardbtn4
             // 
             this.cardbtn4.AccessibleName = "pbx4";
-            this.cardbtn4.Image = global::project_memory.Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
             this.cardbtn4.Location = new System.Drawing.Point(169, 308);
             this.cardbtn4.Name = "cardbtn4";
             this.cardbtn4.Size = new System.Drawing.Size(150, 130);
             this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn4.TabIndex = 11;
             this.cardbtn4.TabStop = false;
+            this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
             // 
             // cardbtn5
             // 
             this.cardbtn5.AccessibleName = "pbx5";
-            this.cardbtn5.Image = global::project_memory.Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
             this.cardbtn5.Location = new System.Drawing.Point(522, 152);
             this.cardbtn5.Name = "cardbtn5";
             this.cardbtn5.Size = new System.Drawing.Size(150, 130);
             this.cardbtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn5.TabIndex = 12;
             this.cardbtn5.TabStop = false;
+            this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
             // 
             // cardbtn6
             // 
             this.cardbtn6.AccessibleName = "pbx6";
-            this.cardbtn6.Image = global::project_memory.Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
             this.cardbtn6.Location = new System.Drawing.Point(522, 308);
             this.cardbtn6.Name = "cardbtn6";
             this.cardbtn6.Size = new System.Drawing.Size(150, 130);
             this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn6.TabIndex = 13;
             this.cardbtn6.TabStop = false;
+            this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
             // 
             // cardbtn7
             // 
             this.cardbtn7.AccessibleName = "pbx7";
-            this.cardbtn7.Image = global::project_memory.Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
             this.cardbtn7.Location = new System.Drawing.Point(336, 308);
             this.cardbtn7.Name = "cardbtn7";
             this.cardbtn7.Size = new System.Drawing.Size(150, 130);
             this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn7.TabIndex = 14;
             this.cardbtn7.TabStop = false;
+            this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
             // 
             // cardbtn8
             // 
             this.cardbtn8.AccessibleName = "pbx8";
-            this.cardbtn8.Image = global::project_memory.Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
             this.cardbtn8.Location = new System.Drawing.Point(336, 152);
             this.cardbtn8.Name = "cardbtn8";
             this.cardbtn8.Size = new System.Drawing.Size(150, 130);
             this.cardbtn8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn8.TabIndex = 15;
             this.cardbtn8.TabStop = false;
+            this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(530, 316);
+            this.label1.Location = new System.Drawing.Point(533, 320);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 16;
@@ -206,7 +206,6 @@
 
         #endregion
         private System.Windows.Forms.Timer resetTimer;
-<<<<<<< HEAD
         private System.Windows.Forms.PictureBox cardbtn1;
         private System.Windows.Forms.PictureBox cardbtn2;
         private System.Windows.Forms.PictureBox cardbtn3;
@@ -219,11 +218,7 @@
         private System.Windows.Forms.Label currentTurnLabel;
         private System.Windows.Forms.Timer endTimer;
         private System.Windows.Forms.Label pointsLabel;
-=======
-        private System.Windows.Forms.Label currentTurnLabel;
-        private System.Windows.Forms.Label pointsLabel;
-        private System.Windows.Forms.Timer endTimer;
->>>>>>> 0daef537bf5d7362bf421b69b0367bd01c497170
+
     }
 }
 
