@@ -60,7 +60,8 @@
             // cardbtn1
             // 
             this.cardbtn1.AccessibleName = "pbx1";
-            this.cardbtn1.Location = new System.Drawing.Point(147, 34);
+            this.cardbtn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn1.Location = new System.Drawing.Point(147, 12);
             this.cardbtn1.Name = "cardbtn1";
             this.cardbtn1.Size = new System.Drawing.Size(150, 130);
             this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -71,6 +72,7 @@
             // cardbtn2
             // 
             this.cardbtn2.AccessibleName = "pbx2";
+            this.cardbtn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn2.Location = new System.Drawing.Point(522, 12);
             this.cardbtn2.Name = "cardbtn2";
             this.cardbtn2.Size = new System.Drawing.Size(150, 130);
@@ -82,6 +84,7 @@
             // cardbtn3
             // 
             this.cardbtn3.AccessibleName = "pbx3";
+            this.cardbtn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn3.Location = new System.Drawing.Point(336, 12);
             this.cardbtn3.Name = "cardbtn3";
             this.cardbtn3.Size = new System.Drawing.Size(150, 130);
@@ -93,7 +96,8 @@
             // cardbtn4
             // 
             this.cardbtn4.AccessibleName = "pbx4";
-            this.cardbtn4.Location = new System.Drawing.Point(169, 308);
+            this.cardbtn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn4.Location = new System.Drawing.Point(147, 152);
             this.cardbtn4.Name = "cardbtn4";
             this.cardbtn4.Size = new System.Drawing.Size(150, 130);
             this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,6 +108,7 @@
             // cardbtn5
             // 
             this.cardbtn5.AccessibleName = "pbx5";
+            this.cardbtn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn5.Location = new System.Drawing.Point(522, 152);
             this.cardbtn5.Name = "cardbtn5";
             this.cardbtn5.Size = new System.Drawing.Size(150, 130);
@@ -115,7 +120,8 @@
             // cardbtn6
             // 
             this.cardbtn6.AccessibleName = "pbx6";
-            this.cardbtn6.Location = new System.Drawing.Point(522, 308);
+            this.cardbtn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn6.Location = new System.Drawing.Point(417, 308);
             this.cardbtn6.Name = "cardbtn6";
             this.cardbtn6.Size = new System.Drawing.Size(150, 130);
             this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -126,7 +132,8 @@
             // cardbtn7
             // 
             this.cardbtn7.AccessibleName = "pbx7";
-            this.cardbtn7.Location = new System.Drawing.Point(336, 308);
+            this.cardbtn7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn7.Location = new System.Drawing.Point(244, 308);
             this.cardbtn7.Name = "cardbtn7";
             this.cardbtn7.Size = new System.Drawing.Size(150, 130);
             this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,6 +144,7 @@
             // cardbtn8
             // 
             this.cardbtn8.AccessibleName = "pbx8";
+            this.cardbtn8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn8.Location = new System.Drawing.Point(336, 152);
             this.cardbtn8.Name = "cardbtn8";
             this.cardbtn8.Size = new System.Drawing.Size(150, 130);
@@ -148,7 +156,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(533, 320);
+            this.label1.Location = new System.Drawing.Point(691, 318);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 16;
