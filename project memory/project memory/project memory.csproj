@@ -78,19 +78,28 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <EmbeddedResource Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Dries en ik _ Verhalen van vroege%28r%29.png" />
+    <EmbeddedResource Include="Resources\Dries en ik _ Verhalen van vroege%28r%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Goofy Horse _ Horses, Animals, Roman.png" />
+    <EmbeddedResource Include="Resources\Goofy Horse _ Horses, Animals, Roman.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Verdwijnt de koe uit ons landschap_.png" />
+    <EmbeddedResource Include="Resources\Verdwijnt de koe uit ons landschap_.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Wat je kan leren van een kip - Hilde Schoonjans.png" />
+    <EmbeddedResource Include="Resources\Wat je kan leren van een kip - Hilde Schoonjans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightanswer-95219.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flipcard-91468.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

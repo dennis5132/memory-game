@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -27,6 +28,7 @@ namespace project_memory
 
         Random random = new Random();
         int timerLength = 0;
+        SoundPlayer player = new SoundPlayer();
 
 
         private void resetCard(Button thisB)
@@ -37,78 +39,85 @@ namespace project_memory
             }
         }
         private void Cardturn(Button btn) //activeert als er op een knop wordt gedrukt
-        {
+        {   
+            if (resetTimer.Enabled == true)
+            {
+                timerLength = 0;
+            }
             if (correct.Contains(btn) == false)
             {
-                //
-            
-            cardCheck += 1f; //er is een kaart omgedraaid
-            if (cardCheck == 1f) 
-            { 
-                firstpicture = btn;
-            }
-            
-            if (cardCheck > 2f) //als er te veel kaarten zijn omgedraaid gaan alle kaarten uit
-            {
-               cardCheck = 1f; //er is hierna een kaart over
-               firstpicture = btn; // stel deze kaart in als firstpicture
+                player.Stream = Properties.Resources.flipcard_91468;
+                player.Play();
 
-                resetCard(cardbtn1);
-                resetCard(cardbtn2);
-                resetCard(cardbtn3);
-                resetCard(cardbtn4);
-                resetCard(cardbtn5);
-                resetCard(cardbtn6);
-                resetCard(cardbtn7);
-                resetCard(cardbtn8);
-            }
+              cardCheck += 1f; //er is een kaart omgedraaid
+              if (cardCheck == 1f) 
+              { 
+                  firstpicture = btn;
+              }
+              
+              if (cardCheck > 2f) //als er te veel kaarten zijn omgedraaid gaan alle kaarten uit
+              {
+                 cardCheck = 1f; //er is hierna een kaart over
+                 firstpicture = btn; // stel deze kaart in als firstpicture
+
+                  resetCard(cardbtn1);
+                  resetCard(cardbtn2);
+                  resetCard(cardbtn3);
+                  resetCard(cardbtn4);
+                  resetCard(cardbtn5);
+                  resetCard(cardbtn6);
+                  resetCard(cardbtn7);
+                  resetCard(cardbtn8);
+              }
 
 
 
-            for (int i = 0; i < cardnumbers.Length; i++) //voor elk lid in cardnumbers
-            {
-                if (cardnumbers[i] == btn.Name.ToString()) //als het lid in cardnumbers de geselecteerde knop is...
-                {
+              for (int i = 0; i < cardnumbers.Length; i++) //voor elk lid in cardnumbers
+              {
+                  if (cardnumbers[i] == btn.Name.ToString()) //als het lid in cardnumbers de geselecteerde knop is...
+                  {
 
-                    if (cardpictures[i] == 1) //...wordt het plaatje van het bijbehorende nummer in cardpictures laten zien
-                    {
-                        btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
-                    }
-                    if (cardpictures[i] == 2)
-                    {
-                        btn.BackgroundImage = Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
-                    }
-                    if (cardpictures[i] == 3)
-                    {
-                        btn.BackgroundImage = Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
-                    }
-                    if (cardpictures[i] == 4)
-                    {
-                        btn.BackgroundImage = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
-                    }
+                      if (cardpictures[i] == 1) //...wordt het plaatje van het bijbehorende nummer in cardpictures laten zien
+                      {
+                          btn.BackgroundImage = Properties.Resources.Verdwijnt_de_koe_uit_ons_landschap_;
+                      }
+                      if (cardpictures[i] == 2)
+                      {
+                          btn.BackgroundImage = Properties.Resources.Dries_en_ik___Verhalen_van_vroege_r_;
+                      }
+                      if (cardpictures[i] == 3)
+                      {
+                          btn.BackgroundImage = Properties.Resources.Goofy_Horse___Horses__Animals__Roman;
+                      }
+                      if (cardpictures[i] == 4)
+                      {
+                          btn.BackgroundImage = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
+                      }
 
-                    if (cardCheck == 1)
-                    {
-                        pictureOne = cardpictures[i];
+                      if (cardCheck == 1)
+                      {
+                          pictureOne = cardpictures[i];
+                      }
+                      else if (cardCheck == 2) 
+                      {
+                          pictureTwo = cardpictures[i];
+                      }
+                  }
+              }
+
+              if (cardCheck == 2f)
+              {
+                  
+                  if (pictureOne == pictureTwo)
+                  {
+                      correct.Add(btn);
+                      correct.Add(firstpicture);
+                    player.Stream = Properties.Resources.rightanswer_95219;
+                    player.Play();
                     }
-                    else if (cardCheck == 2) 
-                    {
-                        pictureTwo = cardpictures[i];
-                    }
+                    resetTimer.Start();
                 }
-            }
-
-            if (cardCheck == 2f)
-            {
-                // dit fixen
-                if (pictureOne == pictureTwo)
-                {
-                    correct.Add(btn);
-                    correct.Add(firstpicture);
-                }
-                resetTimer.Start();
-            }
-            }
+              }
         }
 
         private void Form1_Activated(object sender, EventArgs e)
@@ -171,7 +180,7 @@ namespace project_memory
             if (timerLength == 170)
             {
 
-                cardCheck = 1f;
+                cardCheck = 0f;
 
                 resetCard(cardbtn1);
                 resetCard(cardbtn2);
