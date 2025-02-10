@@ -71,12 +71,30 @@ namespace project_memory.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream flipcard_91468 {
+            get {
+                return ResourceManager.GetStream("flipcard_91468", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Goofy_Horse___Horses__Animals__Roman {
             get {
                 object obj = ResourceManager.GetObject("Goofy Horse _ Horses, Animals, Roman", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream rightanswer_95219 {
+            get {
+                return ResourceManager.GetStream("rightanswer_95219", resourceCulture);
             }
         }
         
