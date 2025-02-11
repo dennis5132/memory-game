@@ -101,5 +101,14 @@
   <ItemGroup>
     <None Include="Resources\flipcard-91468.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\varkeninmodder.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\screaminggoat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grass block.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
