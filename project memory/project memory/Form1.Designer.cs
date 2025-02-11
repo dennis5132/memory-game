@@ -33,10 +33,10 @@ namespace project_memory
             this.currentTurnLabel = new System.Windows.Forms.Label();
             this.endTimer = new System.Windows.Forms.Timer(this.components);
             this.pointsLabel = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cardbtn11 = new System.Windows.Forms.PictureBox();
+            this.cardbtn10 = new System.Windows.Forms.PictureBox();
+            this.cardbtn9 = new System.Windows.Forms.PictureBox();
+            this.cardbtn12 = new System.Windows.Forms.PictureBox();
             this.cardbtn8 = new System.Windows.Forms.PictureBox();
             this.cardbtn7 = new System.Windows.Forms.PictureBox();
             this.cardbtn6 = new System.Windows.Forms.PictureBox();
@@ -45,10 +45,10 @@ namespace project_memory
             this.cardbtn3 = new System.Windows.Forms.PictureBox();
             this.cardbtn2 = new System.Windows.Forms.PictureBox();
             this.cardbtn1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).BeginInit();
@@ -90,49 +90,49 @@ namespace project_memory
             this.pointsLabel.TabIndex = 18;
             this.pointsLabel.Text = "0 Points";
             // 
-            // pictureBox4
+            // cardbtn11
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = global::project_memory.Properties.Resources.varkeninmodder;
-            this.pictureBox4.Location = new System.Drawing.Point(725, 311);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(150, 130);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 22;
-            this.pictureBox4.TabStop = false;
+            this.cardbtn11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn11.Location = new System.Drawing.Point(725, 311);
+            this.cardbtn11.Name = "cardbtn11";
+            this.cardbtn11.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn11.TabIndex = 22;
+            this.cardbtn11.TabStop = false;
+            this.cardbtn11.Click += new System.EventHandler(this.cardbtn11_Click);
             // 
-            // pictureBox3
+            // cardbtn10
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::project_memory.Properties.Resources.screaminggoat;
-            this.pictureBox3.Location = new System.Drawing.Point(725, 163);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(150, 130);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
+            this.cardbtn10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn10.Location = new System.Drawing.Point(725, 163);
+            this.cardbtn10.Name = "cardbtn10";
+            this.cardbtn10.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn10.TabIndex = 21;
+            this.cardbtn10.TabStop = false;
+            this.cardbtn10.Click += new System.EventHandler(this.cardbtn10_Click);
             // 
-            // pictureBox2
+            // cardbtn9
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = global::project_memory.Properties.Resources.screaminggoat;
-            this.pictureBox2.Location = new System.Drawing.Point(725, 16);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(150, 130);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
+            this.cardbtn9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn9.Location = new System.Drawing.Point(725, 16);
+            this.cardbtn9.Name = "cardbtn9";
+            this.cardbtn9.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn9.TabIndex = 20;
+            this.cardbtn9.TabStop = false;
+            this.cardbtn9.Click += new System.EventHandler(this.cardbtn9_Click);
             // 
-            // pictureBox1
+            // cardbtn12
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::project_memory.Properties.Resources.varkeninmodder;
-            this.pictureBox1.Location = new System.Drawing.Point(525, 311);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 130);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
+            this.cardbtn12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn12.Location = new System.Drawing.Point(525, 311);
+            this.cardbtn12.Name = "cardbtn12";
+            this.cardbtn12.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn12.TabIndex = 19;
+            this.cardbtn12.TabStop = false;
+            this.cardbtn12.Click += new System.EventHandler(this.cardbtn12_Click);
             // 
             // cardbtn8
             // 
@@ -228,17 +228,17 @@ namespace project_memory
             this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn1.TabIndex = 8;
             this.cardbtn1.TabStop = false;
+            this.cardbtn1.Click += new System.EventHandler(this.cardbtn1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(982, 453);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.cardbtn11);
+            this.Controls.Add(this.cardbtn10);
+            this.Controls.Add(this.cardbtn9);
+            this.Controls.Add(this.cardbtn12);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.currentTurnLabel);
             this.Controls.Add(this.cardbtn8);
@@ -252,10 +252,10 @@ namespace project_memory
             this.Name = "Form1";
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.Form1_Activated);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).EndInit();
@@ -282,10 +282,10 @@ namespace project_memory
         private System.Windows.Forms.Label currentTurnLabel;
         private System.Windows.Forms.Timer endTimer;
         private System.Windows.Forms.Label pointsLabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox cardbtn12;
+        private System.Windows.Forms.PictureBox cardbtn9;
+        private System.Windows.Forms.PictureBox cardbtn10;
+        private System.Windows.Forms.PictureBox cardbtn11;
     }
 }
 

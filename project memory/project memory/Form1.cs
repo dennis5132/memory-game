@@ -15,9 +15,9 @@ namespace project_memory
     public partial class Form1 : Form
     {
         private float cardCheck = 0f; // hoeveel kaarten er worden bekeken
-        string[] cardnumbers = { "cardbtn1", "cardbtn2", "cardbtn3", "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8" }; //checken welke knop bij welk plaatje in de lijst eronder ligt
+        string[] cardnumbers = { "cardbtn1", "cardbtn2", "cardbtn3", "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8", "cardbtn9", "cardbtn10", "cardbtn11", "cardbtn12" }; //checken welke knop bij welk plaatje in de lijst eronder ligt
 
-        List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4 };
+        List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         List<int> cardpictures = new List<int>(); // waar verschillende plaatjes liggen
 
         private PictureBox firstpicture;
@@ -72,6 +72,11 @@ namespace project_memory
                     resetCard(cardbtn6);
                     resetCard(cardbtn7);
                     resetCard(cardbtn8);
+                    resetCard(cardbtn9);
+                    resetCard(cardbtn10);
+                    resetCard(cardbtn11);
+                    resetCard(cardbtn12);
+
                     currentTurn += 1;
                     currentTurnLabel.Text = "turn " + currentTurn.ToString();
                 }
@@ -98,6 +103,14 @@ namespace project_memory
                         if (cardpictures[i] == 4)
                         {
                             btn.Image = Properties.Resources.Wat_je_kan_leren_van_een_kip___Hilde_Schoonjans;
+                        }
+                        if (cardpictures[i] == 5)
+                        {
+                            btn.Image = Properties.Resources.screaminggoat;
+                        }
+                        if (cardpictures[i] == 6)
+                        {
+                            btn.Image = Properties.Resources.varkeninmodder;
                         }
 
                         if (cardCheck == 1)
@@ -150,7 +163,7 @@ namespace project_memory
 
         }
 
-        private void cardClick1(object sender, EventArgs e)
+        private void cardbtn1_Click(object sender, EventArgs e)
         {
             Cardturn(cardbtn1);
         }
@@ -187,6 +200,26 @@ namespace project_memory
             Cardturn(cardbtn8);
         }
 
+        private void cardbtn9_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn9);
+        }
+
+        private void cardbtn10_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn10);
+        }
+
+        private void cardbtn11_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn11);
+        }
+
+        private void cardbtn12_Click(object sender, EventArgs e)
+        {
+            Cardturn(cardbtn12);
+        }
+
         private void resetTimer_Tick(object sender, EventArgs e)
         {
             timerLength += 1;
@@ -203,6 +236,10 @@ namespace project_memory
                 resetCard(cardbtn6);
                 resetCard(cardbtn7);
                 resetCard(cardbtn8);
+                resetCard(cardbtn9);
+                resetCard(cardbtn10);
+                resetCard(cardbtn11);
+                resetCard(cardbtn12);
 
                 timerLength = 0;
                 resetTimer.Stop();
