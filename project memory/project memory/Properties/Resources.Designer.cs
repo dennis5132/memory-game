@@ -101,6 +101,26 @@ namespace project_memory.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap screaminggoat {
+            get {
+                object obj = ResourceManager.GetObject("screaminggoat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap varkeninmodder {
+            get {
+                object obj = ResourceManager.GetObject("varkeninmodder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Verdwijnt_de_koe_uit_ons_landschap_ {
             get {
                 object obj = ResourceManager.GetObject("Verdwijnt de koe uit ons landschap_", resourceCulture);

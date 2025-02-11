@@ -30,25 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             this.resetTimer = new System.Windows.Forms.Timer(this.components);
-            this.cardbtn1 = new System.Windows.Forms.PictureBox();
-            this.cardbtn2 = new System.Windows.Forms.PictureBox();
-            this.cardbtn3 = new System.Windows.Forms.PictureBox();
-            this.cardbtn4 = new System.Windows.Forms.PictureBox();
-            this.cardbtn5 = new System.Windows.Forms.PictureBox();
-            this.cardbtn6 = new System.Windows.Forms.PictureBox();
-            this.cardbtn7 = new System.Windows.Forms.PictureBox();
-            this.cardbtn8 = new System.Windows.Forms.PictureBox();
             this.currentTurnLabel = new System.Windows.Forms.Label();
             this.endTimer = new System.Windows.Forms.Timer(this.components);
             this.pointsLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).BeginInit();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.cardbtn8 = new System.Windows.Forms.PictureBox();
+            this.cardbtn7 = new System.Windows.Forms.PictureBox();
+            this.cardbtn6 = new System.Windows.Forms.PictureBox();
+            this.cardbtn5 = new System.Windows.Forms.PictureBox();
+            this.cardbtn4 = new System.Windows.Forms.PictureBox();
+            this.cardbtn3 = new System.Windows.Forms.PictureBox();
+            this.cardbtn2 = new System.Windows.Forms.PictureBox();
+            this.cardbtn1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).BeginInit();
             this.SuspendLayout();
             // 
             // resetTimer
@@ -56,111 +64,16 @@
             this.resetTimer.Interval = 1;
             this.resetTimer.Tick += new System.EventHandler(this.resetTimer_Tick);
             // 
-            // cardbtn1
-            // 
-            this.cardbtn1.AccessibleName = "pbx1";
-            this.cardbtn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn1.Location = new System.Drawing.Point(147, 12);
-            this.cardbtn1.Name = "cardbtn1";
-            this.cardbtn1.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn1.TabIndex = 8;
-            this.cardbtn1.TabStop = false;
-            this.cardbtn1.Click += new System.EventHandler(this.cardClick1);
-            // 
-            // cardbtn2
-            // 
-            this.cardbtn2.AccessibleName = "pbx2";
-            this.cardbtn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn2.Location = new System.Drawing.Point(522, 12);
-            this.cardbtn2.Name = "cardbtn2";
-            this.cardbtn2.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn2.TabIndex = 9;
-            this.cardbtn2.TabStop = false;
-            this.cardbtn2.Click += new System.EventHandler(this.cardbtn2_Click);
-            // 
-            // cardbtn3
-            // 
-            this.cardbtn3.AccessibleName = "pbx3";
-            this.cardbtn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn3.Location = new System.Drawing.Point(336, 12);
-            this.cardbtn3.Name = "cardbtn3";
-            this.cardbtn3.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn3.TabIndex = 10;
-            this.cardbtn3.TabStop = false;
-            this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
-            // 
-            // cardbtn4
-            // 
-            this.cardbtn4.AccessibleName = "pbx4";
-            this.cardbtn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn4.Location = new System.Drawing.Point(147, 152);
-            this.cardbtn4.Name = "cardbtn4";
-            this.cardbtn4.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn4.TabIndex = 11;
-            this.cardbtn4.TabStop = false;
-            this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
-            // 
-            // cardbtn5
-            // 
-            this.cardbtn5.AccessibleName = "pbx5";
-            this.cardbtn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn5.Location = new System.Drawing.Point(522, 152);
-            this.cardbtn5.Name = "cardbtn5";
-            this.cardbtn5.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn5.TabIndex = 12;
-            this.cardbtn5.TabStop = false;
-            this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
-            // 
-            // cardbtn6
-            // 
-            this.cardbtn6.AccessibleName = "pbx6";
-            this.cardbtn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn6.Location = new System.Drawing.Point(417, 308);
-            this.cardbtn6.Name = "cardbtn6";
-            this.cardbtn6.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn6.TabIndex = 13;
-            this.cardbtn6.TabStop = false;
-            this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
-            // 
-            // cardbtn7
-            // 
-            this.cardbtn7.AccessibleName = "pbx7";
-            this.cardbtn7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn7.Location = new System.Drawing.Point(244, 308);
-            this.cardbtn7.Name = "cardbtn7";
-            this.cardbtn7.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn7.TabIndex = 14;
-            this.cardbtn7.TabStop = false;
-            this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
-            // 
-            // cardbtn8
-            // 
-            this.cardbtn8.AccessibleName = "pbx8";
-            this.cardbtn8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn8.Location = new System.Drawing.Point(336, 152);
-            this.cardbtn8.Name = "cardbtn8";
-            this.cardbtn8.Size = new System.Drawing.Size(150, 130);
-            this.cardbtn8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.cardbtn8.TabIndex = 15;
-            this.cardbtn8.TabStop = false;
-            this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
-            // 
             // currentTurnLabel
             // 
             this.currentTurnLabel.AutoSize = true;
+            this.currentTurnLabel.BackColor = System.Drawing.SystemColors.Control;
             this.currentTurnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.currentTurnLabel.Location = new System.Drawing.Point(27, 12);
+            this.currentTurnLabel.Location = new System.Drawing.Point(12, 9);
             this.currentTurnLabel.Name = "currentTurnLabel";
-            this.currentTurnLabel.Size = new System.Drawing.Size(86, 32);
+            this.currentTurnLabel.Size = new System.Drawing.Size(95, 32);
             this.currentTurnLabel.TabIndex = 17;
-            this.currentTurnLabel.Text = "turn 1";
+            this.currentTurnLabel.Text = "Turn 1";
             // 
             // endTimer
             // 
@@ -169,18 +82,170 @@
             // pointsLabel
             // 
             this.pointsLabel.AutoSize = true;
+            this.pointsLabel.BackColor = System.Drawing.SystemColors.Control;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pointsLabel.Location = new System.Drawing.Point(678, 12);
+            this.pointsLabel.Location = new System.Drawing.Point(881, 16);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(114, 32);
+            this.pointsLabel.Size = new System.Drawing.Size(117, 32);
             this.pointsLabel.TabIndex = 18;
-            this.pointsLabel.Text = "0 points";
+            this.pointsLabel.Text = "0 Points";
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = global::project_memory.Properties.Resources.varkeninmodder;
+            this.pictureBox4.Location = new System.Drawing.Point(725, 311);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(150, 130);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 22;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = global::project_memory.Properties.Resources.screaminggoat;
+            this.pictureBox3.Location = new System.Drawing.Point(725, 163);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(150, 130);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 21;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::project_memory.Properties.Resources.screaminggoat;
+            this.pictureBox2.Location = new System.Drawing.Point(725, 16);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(150, 130);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::project_memory.Properties.Resources.varkeninmodder;
+            this.pictureBox1.Location = new System.Drawing.Point(525, 311);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(150, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // cardbtn8
+            // 
+            this.cardbtn8.AccessibleName = "pbx8";
+            this.cardbtn8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn8.Location = new System.Drawing.Point(325, 311);
+            this.cardbtn8.Name = "cardbtn8";
+            this.cardbtn8.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn8.TabIndex = 15;
+            this.cardbtn8.TabStop = false;
+            this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
+            // 
+            // cardbtn7
+            // 
+            this.cardbtn7.AccessibleName = "pbx7";
+            this.cardbtn7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn7.Location = new System.Drawing.Point(125, 311);
+            this.cardbtn7.Name = "cardbtn7";
+            this.cardbtn7.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn7.TabIndex = 14;
+            this.cardbtn7.TabStop = false;
+            this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
+            // 
+            // cardbtn6
+            // 
+            this.cardbtn6.AccessibleName = "pbx6";
+            this.cardbtn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn6.Location = new System.Drawing.Point(525, 163);
+            this.cardbtn6.Name = "cardbtn6";
+            this.cardbtn6.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn6.TabIndex = 13;
+            this.cardbtn6.TabStop = false;
+            this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
+            // 
+            // cardbtn5
+            // 
+            this.cardbtn5.AccessibleName = "pbx5";
+            this.cardbtn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn5.Location = new System.Drawing.Point(325, 163);
+            this.cardbtn5.Name = "cardbtn5";
+            this.cardbtn5.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn5.TabIndex = 12;
+            this.cardbtn5.TabStop = false;
+            this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
+            // 
+            // cardbtn4
+            // 
+            this.cardbtn4.AccessibleName = "pbx4";
+            this.cardbtn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn4.Location = new System.Drawing.Point(125, 163);
+            this.cardbtn4.Name = "cardbtn4";
+            this.cardbtn4.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn4.TabIndex = 11;
+            this.cardbtn4.TabStop = false;
+            this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
+            // 
+            // cardbtn3
+            // 
+            this.cardbtn3.AccessibleName = "pbx3";
+            this.cardbtn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn3.Location = new System.Drawing.Point(525, 16);
+            this.cardbtn3.Name = "cardbtn3";
+            this.cardbtn3.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn3.TabIndex = 10;
+            this.cardbtn3.TabStop = false;
+            this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
+            // 
+            // cardbtn2
+            // 
+            this.cardbtn2.AccessibleName = "pbx2";
+            this.cardbtn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn2.Location = new System.Drawing.Point(325, 16);
+            this.cardbtn2.Name = "cardbtn2";
+            this.cardbtn2.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn2.TabIndex = 9;
+            this.cardbtn2.TabStop = false;
+            this.cardbtn2.Click += new System.EventHandler(this.cardbtn2_Click);
+            // 
+            // cardbtn1
+            // 
+            this.cardbtn1.AccessibleName = "pbx1";
+            this.cardbtn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn1.Location = new System.Drawing.Point(125, 16);
+            this.cardbtn1.Name = "cardbtn1";
+            this.cardbtn1.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn1.TabIndex = 8;
+            this.cardbtn1.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+<<<<<<< HEAD
+<<<<<<< HEAD
+            this.ClientSize = new System.Drawing.Size(982, 453);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+=======
+            this.ClientSize = new System.Drawing.Size(818, 450);
+>>>>>>> 76aeefcba034aaba777bc011657115179fa6f755
+=======
+            this.ClientSize = new System.Drawing.Size(818, 450);
+>>>>>>> 76aeefcba034aaba777bc011657115179fa6f755
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.currentTurnLabel);
             this.Controls.Add(this.cardbtn8);
@@ -194,14 +259,18 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.Form1_Activated);
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,7 +289,10 @@
         private System.Windows.Forms.Label currentTurnLabel;
         private System.Windows.Forms.Timer endTimer;
         private System.Windows.Forms.Label pointsLabel;
-
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

@@ -27,8 +27,10 @@ namespace project_memory
         public int pictureTwo;
 
         Random random = new Random();
-        int timerLength = 0;
         SoundPlayer player = new SoundPlayer();
+
+        int timerLength = 0;
+        int endTimerLength = 0;
 
         public int currentTurn = 1;
         public int currentPoints = 0;
@@ -122,7 +124,7 @@ namespace project_memory
                         pointsLabel.Text = currentPoints.ToString() + " points";
                         if (correct.Count == 8)
                         {
-                            timerLength = 0;
+                            endTimerLength = 0;
                             endTimer.Start();
 
                         }
@@ -152,7 +154,6 @@ namespace project_memory
         {
             Cardturn(cardbtn1);
         }
-
         private void cardbtn2_Click(object sender, EventArgs e)
         {
             Cardturn(cardbtn2);
@@ -213,14 +214,12 @@ namespace project_memory
 
         private void endTimer_Tick(object sender, EventArgs e)
         {
-            timerLength += 1;
-            if (timerLength == 1)
+            endTimerLength += 1;
+            if (endTimerLength >= 40)
             {
                 Application.Exit();
             }
         }
-
-        
     }
 }
 

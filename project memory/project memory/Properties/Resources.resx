@@ -124,16 +124,22 @@
   <data name="flipcard_91468" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\flipcard-91468.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Verdwijnt de koe uit ons landschap_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Verdwijnt de koe uit ons landschap_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="varkeninmodder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\varkeninmodder.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wat je kan leren van een kip - Hilde Schoonjans" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Wat je kan leren van een kip - Hilde Schoonjans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Goofy Horse _ Horses, Animals, Roman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Goofy Horse _ Horses, Animals, Roman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rightanswer_95219" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\rightanswer-95219.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Verdwijnt de koe uit ons landschap_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Verdwijnt de koe uit ons landschap_.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Wat je kan leren van een kip - Hilde Schoonjans" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Wat je kan leren van een kip - Hilde Schoonjans.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="screaminggoat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\screaminggoat.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
