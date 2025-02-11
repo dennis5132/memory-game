@@ -1,4 +1,4 @@
-﻿namespace project_memory
+namespace project_memory
 {
     partial class Form1
     {
@@ -234,18 +234,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 <<<<<<< HEAD
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(982, 453);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-=======
-            this.ClientSize = new System.Drawing.Size(818, 450);
->>>>>>> 76aeefcba034aaba777bc011657115179fa6f755
-=======
-            this.ClientSize = new System.Drawing.Size(818, 450);
->>>>>>> 76aeefcba034aaba777bc011657115179fa6f755
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.currentTurnLabel);
             this.Controls.Add(this.cardbtn8);
