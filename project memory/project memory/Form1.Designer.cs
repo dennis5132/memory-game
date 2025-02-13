@@ -97,7 +97,7 @@ namespace project_memory
             // cardbtn11
             // 
             this.cardbtn11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn11.Location = new System.Drawing.Point(736, 393);
+            this.cardbtn11.Location = new System.Drawing.Point(736, 416);
             this.cardbtn11.Name = "cardbtn11";
             this.cardbtn11.Size = new System.Drawing.Size(150, 130);
             this.cardbtn11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -108,7 +108,7 @@ namespace project_memory
             // cardbtn10
             // 
             this.cardbtn10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn10.Location = new System.Drawing.Point(736, 245);
+            this.cardbtn10.Location = new System.Drawing.Point(736, 257);
             this.cardbtn10.Name = "cardbtn10";
             this.cardbtn10.Size = new System.Drawing.Size(150, 130);
             this.cardbtn10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +130,7 @@ namespace project_memory
             // cardbtn12
             // 
             this.cardbtn12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn12.Location = new System.Drawing.Point(536, 393);
+            this.cardbtn12.Location = new System.Drawing.Point(536, 416);
             this.cardbtn12.Name = "cardbtn12";
             this.cardbtn12.Size = new System.Drawing.Size(150, 130);
             this.cardbtn12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -142,7 +142,7 @@ namespace project_memory
             // 
             this.cardbtn8.AccessibleName = "pbx8";
             this.cardbtn8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn8.Location = new System.Drawing.Point(336, 393);
+            this.cardbtn8.Location = new System.Drawing.Point(336, 416);
             this.cardbtn8.Name = "cardbtn8";
             this.cardbtn8.Size = new System.Drawing.Size(150, 130);
             this.cardbtn8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -154,7 +154,7 @@ namespace project_memory
             // 
             this.cardbtn7.AccessibleName = "pbx7";
             this.cardbtn7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn7.Location = new System.Drawing.Point(136, 393);
+            this.cardbtn7.Location = new System.Drawing.Point(136, 416);
             this.cardbtn7.Name = "cardbtn7";
             this.cardbtn7.Size = new System.Drawing.Size(150, 130);
             this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@ namespace project_memory
             // 
             this.cardbtn6.AccessibleName = "pbx6";
             this.cardbtn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn6.Location = new System.Drawing.Point(536, 245);
+            this.cardbtn6.Location = new System.Drawing.Point(536, 257);
             this.cardbtn6.Name = "cardbtn6";
             this.cardbtn6.Size = new System.Drawing.Size(150, 130);
             this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +178,7 @@ namespace project_memory
             // 
             this.cardbtn5.AccessibleName = "pbx5";
             this.cardbtn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn5.Location = new System.Drawing.Point(336, 245);
+            this.cardbtn5.Location = new System.Drawing.Point(336, 257);
             this.cardbtn5.Name = "cardbtn5";
             this.cardbtn5.Size = new System.Drawing.Size(150, 130);
             this.cardbtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -190,7 +190,7 @@ namespace project_memory
             // 
             this.cardbtn4.AccessibleName = "pbx4";
             this.cardbtn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.cardbtn4.Location = new System.Drawing.Point(136, 245);
+            this.cardbtn4.Location = new System.Drawing.Point(136, 257);
             this.cardbtn4.Name = "cardbtn4";
             this.cardbtn4.Size = new System.Drawing.Size(150, 130);
             this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -243,7 +243,7 @@ namespace project_memory
             // 
             this.timelbl.AutoSize = true;
             this.timelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timelbl.Location = new System.Drawing.Point(467, 16);
+            this.timelbl.Location = new System.Drawing.Point(471, 16);
             this.timelbl.Name = "timelbl";
             this.timelbl.Size = new System.Drawing.Size(86, 32);
             this.timelbl.TabIndex = 23;
@@ -254,7 +254,7 @@ namespace project_memory
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project_memory.Properties.Resources.grass_block;
-            this.ClientSize = new System.Drawing.Size(1020, 558);
+            this.ClientSize = new System.Drawing.Size(1020, 571);
             this.Controls.Add(this.timelbl);
             this.Controls.Add(this.cardbtn11);
             this.Controls.Add(this.cardbtn10);
