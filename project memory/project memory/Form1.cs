@@ -34,6 +34,7 @@ namespace project_memory
 
         public int currentTurn = 1;
         public int currentPoints = 0;
+        public int playTime;
 
         private void resetCard(PictureBox thisB)
         {
@@ -135,7 +136,7 @@ namespace project_memory
                         player.Play();
                         currentPoints++;
                         pointsLabel.Text = currentPoints.ToString() + " points";
-                        if (correct.Count == 8)
+                        if (correct.Count == 12)
                         {
                             endTimerLength = 0;
                             endTimer.Start();
@@ -155,6 +156,7 @@ namespace project_memory
                 cardpictures.Add(picturelist[addnumber]);
                 picturelist.RemoveAt(addnumber);
             }
+            timeTimer.Start();
         }
 
         public Form1()
@@ -257,6 +259,21 @@ namespace project_memory
                 Application.Exit();
             }
         }
+
+        private void timeTimer_Tick(object sender, EventArgs e)
+        {
+            // komt 1 seconde bij
+            playTime++;
+
+            // maak minuten en seconden van
+            int minuten = playTime / 6;
+            int seconden = playTime % 6;
+
+            // zet het op label
+            timelbl.Text = $"{minuten:D2}:{seconden:D2}";
+        }
+
+        
     }
 }
 
