@@ -140,7 +140,8 @@ namespace project_memory
                         {
                             endTimerLength = 0;
                             endTimer.Start();
-
+                            timeTimer.Stop();
+                            resetTimer.Stop();
                         }
                     }
                     resetTimer.Start();
