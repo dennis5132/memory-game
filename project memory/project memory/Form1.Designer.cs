@@ -80,7 +80,7 @@ namespace project_memory
             // 
             // endTimer
             // 
-            this.endTimer.Tick += new System.EventHandler(this.endTimer_Tick);
+            
             // 
             // pointsLabel
             // 

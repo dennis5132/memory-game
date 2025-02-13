@@ -30,11 +30,17 @@ namespace project_memory
         SoundPlayer player = new SoundPlayer();
 
         int timerLength = 0;
-        int endTimerLength = 0;
+        //int endTimerLength = 0;
 
         public int currentTurn = 1;
         public int currentPoints = 0;
-        public int playTime;
+        public int playTime = 0;
+
+        int minuten;
+        int seconden;
+
+
+
 
         private void resetCard(PictureBox thisB)
         {
@@ -138,10 +144,21 @@ namespace project_memory
                         pointsLabel.Text = currentPoints.ToString() + " points";
                         if (correct.Count == 12)
                         {
-                            endTimerLength = 0;
-                            endTimer.Start();
+                            //endTimerLength = 0;
+                            //endTimer.Start();
                             timeTimer.Stop();
                             resetTimer.Stop();
+                            DialogResult result = MessageBox.Show($"Do you want to play again?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            if (result == DialogResult.Yes)
+                            {
+                                //Application.Restart();
+                                //Environment.Exit(0);  
+                            }
+                            else
+                            {
+                                // User clicked No
+                                Application.Exit();
+                            }
                         }
                     }
                     resetTimer.Start();
@@ -160,6 +177,7 @@ namespace project_memory
             timeTimer.Start();
         }
 
+       
         public Form1()
         {
             InitializeComponent();
@@ -226,7 +244,7 @@ namespace project_memory
         private void resetTimer_Tick(object sender, EventArgs e)
         {
             timerLength += 1;
-            if (timerLength == 170)
+            if (timerLength == 130)
             {
 
                 cardCheck = 0f;
@@ -252,14 +270,15 @@ namespace project_memory
             }
         }
 
-        private void endTimer_Tick(object sender, EventArgs e)
-        {
-            endTimerLength += 1;
-            if (endTimerLength >= 40)
-            {
-                Application.Exit();
-            }
-        }
+        //private void endTimer_Tick(object sender, EventArgs e)
+        //{
+        //    endTimerLength += 1;
+        //    if (endTimerLength >= 40)
+        //    {
+        //        //
+                
+        //    }
+        //}
 
         private void timeTimer_Tick(object sender, EventArgs e)
         {
@@ -267,8 +286,8 @@ namespace project_memory
             playTime++;
 
             // maak minuten en seconden van
-            int minuten = playTime / 6;
-            int seconden = playTime % 6;
+            minuten = playTime / 6;
+            seconden = playTime % 6;
 
             // zet het op label
             timelbl.Text = $"{minuten:D2}:{seconden:D2}";
