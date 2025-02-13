@@ -151,6 +151,7 @@ namespace project_memory
                             DialogResult result = MessageBox.Show($"Do you want to play again?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (result == DialogResult.Yes)
                             {
+                                Application.Restart();
                                 //Application.Restart();
                                 //Environment.Exit(0);  
                             }
