@@ -34,13 +34,10 @@ namespace project_memory
 
         public int currentTurn = 1;
         public int currentPoints = 0;
-        public int playTime = 0;
+        public int playTime = 0;        
 
         int minuten;
         int seconden;
-
-
-
 
         private void resetCard(PictureBox thisB)
         {
@@ -68,6 +65,7 @@ namespace project_memory
 
                 if (cardCheck > 2f) //als er te veel kaarten zijn omgedraaid gaan alle kaarten uit
                 {
+                    resetTimer.Stop();
                     cardCheck = 1f; //er is hierna een kaart over
                     firstpicture = btn; // stel deze kaart in als firstpicture
 
@@ -151,8 +149,7 @@ namespace project_memory
                             DialogResult result = MessageBox.Show($"Do you want to play again?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (result == DialogResult.Yes)
                             {
-                                //Application.Restart();
-                                //Environment.Exit(0);  
+                                resetGame();  
                             }
                             else
                             {
@@ -162,12 +159,25 @@ namespace project_memory
                         }
                     }
                     resetTimer.Start();
+                    //////
                 }
             }
         }
 
         private void Form1_Activated(object sender, EventArgs e)
         {
+            resetGame();
+        }
+        public void resetGame()
+        {
+            cardCheck = 0f;
+            picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+            cardpictures = new List<int>();
+            correct = new List<PictureBox>();
+            currentTurn = 1;
+            currentPoints = 0;
+            playTime = 0;
+
             for (int i = 0; i < picturelist.Count;)
             {
                 int addnumber = random.Next(0, picturelist.Count);
@@ -176,7 +186,6 @@ namespace project_memory
             }
             timeTimer.Start();
         }
-
        
         public Form1()
         {
@@ -294,7 +303,8 @@ namespace project_memory
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Restart();
+            //Application.Restart();
+            resetGame();
         }
     }
 }

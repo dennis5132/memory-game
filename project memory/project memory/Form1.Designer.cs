@@ -64,7 +64,7 @@ namespace project_memory
             // 
             // resetTimer
             // 
-            this.resetTimer.Interval = 130;
+            this.resetTimer.Interval = 1000;
             this.resetTimer.Tick += new System.EventHandler(this.resetTimer_Tick);
             // 
             // currentTurnLabel
