@@ -252,10 +252,9 @@ namespace project_memory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            
-            this.Controls.Add(this.timelbl);
             this.BackgroundImage = global::project_memory.Properties.Resources.grass_block;
-            this.ClientSize = new System.Drawing.Size(1020, 453);
+            this.ClientSize = new System.Drawing.Size(1020, 558);
+            this.Controls.Add(this.timelbl);
             this.Controls.Add(this.cardbtn11);
             this.Controls.Add(this.cardbtn10);
             this.Controls.Add(this.cardbtn9);
