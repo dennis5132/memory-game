@@ -47,7 +47,6 @@ namespace project_memory
             this.cardbtn1 = new System.Windows.Forms.PictureBox();
             this.timeTimer = new System.Windows.Forms.Timer(this.components);
             this.timelbl = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn9)).BeginInit();
@@ -246,24 +245,12 @@ namespace project_memory
             this.timelbl.TabIndex = 23;
             this.timelbl.Text = "00:00";
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(474, 51);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 31);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Reset";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project_memory.Properties.Resources.grass_block;
             this.ClientSize = new System.Drawing.Size(1020, 571);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.timelbl);
             this.Controls.Add(this.cardbtn11);
             this.Controls.Add(this.cardbtn10);
@@ -319,7 +306,6 @@ namespace project_memory
         private System.Windows.Forms.PictureBox cardbtn11;
         private System.Windows.Forms.Timer timeTimer;
         private System.Windows.Forms.Label timelbl;
-        private System.Windows.Forms.Button button1;
     }
 }
 
