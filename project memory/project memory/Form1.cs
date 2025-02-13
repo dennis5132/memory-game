@@ -150,6 +150,7 @@ namespace project_memory
                             if (result == DialogResult.Yes)
                             {
                                 resetGame();  
+                                currentTurn = 0;
                             }
                             else
                             {
@@ -159,7 +160,7 @@ namespace project_memory
                         }
                     }
                     resetTimer.Start();
-                    //////
+                    
                 }
             }
         }
@@ -174,9 +175,9 @@ namespace project_memory
             picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
             cardpictures = new List<int>();
             correct = new List<PictureBox>();
-            currentTurn = 1;
             currentPoints = 0;
             playTime = 0;
+            pointsLabel.Text = currentPoints.ToString() + " points";
 
             for (int i = 0; i < picturelist.Count;)
             {
@@ -305,6 +306,7 @@ namespace project_memory
         {
             //Application.Restart();
             resetGame();
+            currentTurn = 0;
         }
     }
 }
