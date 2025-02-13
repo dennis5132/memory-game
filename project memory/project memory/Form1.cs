@@ -243,10 +243,6 @@ namespace project_memory
 
         private void resetTimer_Tick(object sender, EventArgs e)
         {
-            timerLength += 1;
-            if (timerLength == 130)
-            {
-
                 cardCheck = 0f;
 
                 resetCard(cardbtn1);
@@ -262,12 +258,10 @@ namespace project_memory
                 resetCard(cardbtn11);
                 resetCard(cardbtn12);
 
-                timerLength = 0;
                 resetTimer.Stop();
 
                 currentTurn += 1;
                 currentTurnLabel.Text = "turn " + currentTurn.ToString();
-            }
         }
 
         //private void endTimer_Tick(object sender, EventArgs e)

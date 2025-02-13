@@ -64,7 +64,7 @@ namespace project_memory
             // 
             // resetTimer
             // 
-            this.resetTimer.Interval = 1;
+            this.resetTimer.Interval = 130;
             this.resetTimer.Tick += new System.EventHandler(this.resetTimer_Tick);
             // 
             // currentTurnLabel
@@ -78,10 +78,6 @@ namespace project_memory
             this.currentTurnLabel.Size = new System.Drawing.Size(95, 32);
             this.currentTurnLabel.TabIndex = 17;
             this.currentTurnLabel.Text = "Turn 1";
-            // 
-            // endTimer
-            // 
-            
             // 
             // pointsLabel
             // 
