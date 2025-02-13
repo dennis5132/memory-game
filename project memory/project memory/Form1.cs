@@ -178,6 +178,18 @@ namespace project_memory
             currentPoints = 0;
             playTime = 0;
             pointsLabel.Text = currentPoints.ToString() + " points";
+            resetCard(cardbtn1);
+            resetCard(cardbtn2);
+            resetCard(cardbtn3);
+            resetCard(cardbtn4);
+            resetCard(cardbtn5);
+            resetCard(cardbtn6);
+            resetCard(cardbtn7);
+            resetCard(cardbtn8);
+            resetCard(cardbtn9);
+            resetCard(cardbtn10);
+            resetCard(cardbtn11);
+            resetCard(cardbtn12);
 
             for (int i = 0; i < picturelist.Count;)
             {
