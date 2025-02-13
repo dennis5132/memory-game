@@ -293,7 +293,15 @@ namespace project_memory
             timelbl.Text = $"{minuten:D2}:{seconden:D2}";
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
 
