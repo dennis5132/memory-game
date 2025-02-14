@@ -15,7 +15,8 @@ namespace project_memory
     public partial class Form1 : Form
     {
         private float cardCheck = 0f; // hoeveel kaarten er worden bekeken
-        string[] cardnumbers = { "cardbtn1", "cardbtn2", "cardbtn3", "cardbtn4", "cardbtn5", "cardbtn6", "cardbtn7", "cardbtn8", "cardbtn9", "cardbtn10", "cardbtn11", "cardbtn12" }; //checken welke knop bij welk plaatje in de lijst eronder ligt
+        List<PictureBox> cardnumbers = new List<PictureBox>();
+        
 
         List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         List<int> cardpictures = new List<int>(); // waar verschillende plaatjes liggen
@@ -29,15 +30,30 @@ namespace project_memory
         Random random = new Random();
         SoundPlayer player = new SoundPlayer();
 
-        int timerLength = 0;
-        //int endTimerLength = 0;
-
         public int currentTurn = 1;
         public int currentPoints = 0;
         public int playTime = 0;        
 
         int minuten;
         int seconden;
+
+        public Form1()
+        {
+            InitializeComponent();
+
+            cardnumbers.Add(cardbtn1);
+            cardnumbers.Add(cardbtn2);
+            cardnumbers.Add(cardbtn3);
+            cardnumbers.Add(cardbtn4);
+            cardnumbers.Add(cardbtn5);
+            cardnumbers.Add(cardbtn6);
+            cardnumbers.Add(cardbtn7);
+            cardnumbers.Add(cardbtn8);
+            cardnumbers.Add(cardbtn9);
+            cardnumbers.Add(cardbtn10);
+            cardnumbers.Add(cardbtn11);
+            cardnumbers.Add(cardbtn12);
+        }
 
         private void resetCard(PictureBox thisB)
         {
@@ -48,10 +64,6 @@ namespace project_memory
         }
         private void Cardturn(PictureBox btn) //activeert als er op een knop wordt gedrukt
         {
-            if (resetTimer.Enabled == true)
-            {
-                timerLength = 0;
-            }
             if (correct.Contains(btn) == false)
             {
                 player.Stream = Properties.Resources.flipcard_91468;
@@ -68,29 +80,20 @@ namespace project_memory
                     resetTimer.Stop();
                     cardCheck = 1f; //er is hierna een kaart over
                     firstpicture = btn; // stel deze kaart in als firstpicture
-
-                    resetCard(cardbtn1);
-                    resetCard(cardbtn2);
-                    resetCard(cardbtn3);
-                    resetCard(cardbtn4);
-                    resetCard(cardbtn5);
-                    resetCard(cardbtn6);
-                    resetCard(cardbtn7);
-                    resetCard(cardbtn8);
-                    resetCard(cardbtn9);
-                    resetCard(cardbtn10);
-                    resetCard(cardbtn11);
-                    resetCard(cardbtn12);
-
+                    for (int i = 0; i < cardnumbers.Count; i++) 
+                    {
+                        resetCard(cardnumbers[i]);
+                    }
+                    
                     currentTurn += 1;
                     currentTurnLabel.Text = "turn " + currentTurn.ToString();
                 }
 
 
 
-                for (int i = 0; i < cardnumbers.Length; i++) //voor elk lid in cardnumbers
+                for (int i = 0; i < cardnumbers.Count; i++) //voor elk lid in cardnumbers
                 {
-                    if (cardnumbers[i] == btn.Name.ToString()) //als het lid in cardnumbers de geselecteerde knop is...
+                    if (cardnumbers[i] == btn) //als het lid in cardnumbers de geselecteerde knop is...
                     {
 
                         if (cardpictures[i] == 1) //...wordt het plaatje van het bijbehorende nummer in cardpictures laten zien
@@ -142,8 +145,6 @@ namespace project_memory
                         pointsLabel.Text = currentPoints.ToString() + " points";
                         if (correct.Count == 12)
                         {
-                            //endTimerLength = 0;
-                            //endTimer.Start();
                             timeTimer.Stop();
                             resetTimer.Stop();
                             DialogResult result = MessageBox.Show($"Do you want to play again?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -169,6 +170,7 @@ namespace project_memory
         {
             resetGame();
         }
+
         public void resetGame()
         {
             cardCheck = 0f;
@@ -178,19 +180,12 @@ namespace project_memory
             currentPoints = 0;
             playTime = 0;
             pointsLabel.Text = currentPoints.ToString() + " points";
-            resetCard(cardbtn1);
-            resetCard(cardbtn2);
-            resetCard(cardbtn3);
-            resetCard(cardbtn4);
-            resetCard(cardbtn5);
-            resetCard(cardbtn6);
-            resetCard(cardbtn7);
-            resetCard(cardbtn8);
-            resetCard(cardbtn9);
-            resetCard(cardbtn10);
-            resetCard(cardbtn11);
-            resetCard(cardbtn12);
 
+            for (int i = 0; i < cardnumbers.Count; i++)
+            {
+                resetCard(cardnumbers[i]);
+            }
+            
             for (int i = 0; i < picturelist.Count;)
             {
                 int addnumber = random.Next(0, picturelist.Count);
@@ -199,102 +194,30 @@ namespace project_memory
             }
             timeTimer.Start();
         }
-       
-        public Form1()
-        {
-            InitializeComponent();
 
-        }
-
-        private void cardbtn1_Click(object sender, EventArgs e)
+        private void cardclick(object sender, EventArgs e)
         {
-            Cardturn(cardbtn1);
-        }
-        private void cardbtn2_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn2);
-        }
-        private void cardbtn3_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn3);
-        }
-        private void cardbtn4_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn4);
-        }
-
-        private void cardbtn5_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn5);
-        }
-
-        private void cardbtn6_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn6);
-        }
-
-        private void cardbtn7_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn7);
-        }
-
-        private void cardbtn8_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn8);
-        }
-
-        private void cardbtn9_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn9);
-        }
-
-        private void cardbtn10_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn10);
-        }
-
-        private void cardbtn11_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn11);
-        }
-
-        private void cardbtn12_Click(object sender, EventArgs e)
-        {
-            Cardturn(cardbtn12);
+            if (sender is PictureBox clicked)
+            {
+                Cardturn(clicked);
+            }
         }
 
         private void resetTimer_Tick(object sender, EventArgs e)
         {
                 cardCheck = 0f;
 
-                resetCard(cardbtn1);
-                resetCard(cardbtn2);
-                resetCard(cardbtn3);
-                resetCard(cardbtn4);
-                resetCard(cardbtn5);
-                resetCard(cardbtn6);
-                resetCard(cardbtn7);
-                resetCard(cardbtn8);
-                resetCard(cardbtn9);
-                resetCard(cardbtn10);
-                resetCard(cardbtn11);
-                resetCard(cardbtn12);
+            for (int i = 0; i < cardnumbers.Count; i++)
+            {
+                resetCard(cardnumbers[i]);
+            }
 
-                resetTimer.Stop();
+            resetTimer.Stop();
 
                 currentTurn += 1;
                 currentTurnLabel.Text = "turn " + currentTurn.ToString();
         }
 
-        //private void endTimer_Tick(object sender, EventArgs e)
-        //{
-        //    endTimerLength += 1;
-        //    if (endTimerLength >= 40)
-        //    {
-        //        //
-                
-        //    }
-        //}
 
         private void timeTimer_Tick(object sender, EventArgs e)
         {
@@ -316,10 +239,11 @@ namespace project_memory
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Application.Restart();
             resetGame();
             currentTurn = 0;
         }
+
+        
     }
 }
 

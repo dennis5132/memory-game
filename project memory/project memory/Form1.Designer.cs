@@ -99,7 +99,7 @@ namespace project_memory
             this.cardbtn11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn11.TabIndex = 22;
             this.cardbtn11.TabStop = false;
-            this.cardbtn11.Click += new System.EventHandler(this.cardbtn11_Click);
+            this.cardbtn11.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn10
             // 
@@ -110,7 +110,7 @@ namespace project_memory
             this.cardbtn10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn10.TabIndex = 21;
             this.cardbtn10.TabStop = false;
-            this.cardbtn10.Click += new System.EventHandler(this.cardbtn10_Click);
+            this.cardbtn10.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn9
             // 
@@ -121,7 +121,7 @@ namespace project_memory
             this.cardbtn9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn9.TabIndex = 20;
             this.cardbtn9.TabStop = false;
-            this.cardbtn9.Click += new System.EventHandler(this.cardbtn9_Click);
+            this.cardbtn9.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn12
             // 
@@ -132,7 +132,7 @@ namespace project_memory
             this.cardbtn12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn12.TabIndex = 19;
             this.cardbtn12.TabStop = false;
-            this.cardbtn12.Click += new System.EventHandler(this.cardbtn12_Click);
+            this.cardbtn12.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn8
             // 
@@ -144,7 +144,7 @@ namespace project_memory
             this.cardbtn8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn8.TabIndex = 15;
             this.cardbtn8.TabStop = false;
-            this.cardbtn8.Click += new System.EventHandler(this.cardbtn8_Click);
+            this.cardbtn8.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn7
             // 
@@ -156,7 +156,7 @@ namespace project_memory
             this.cardbtn7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn7.TabIndex = 14;
             this.cardbtn7.TabStop = false;
-            this.cardbtn7.Click += new System.EventHandler(this.cardbtn7_Click);
+            this.cardbtn7.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn6
             // 
@@ -168,7 +168,7 @@ namespace project_memory
             this.cardbtn6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn6.TabIndex = 13;
             this.cardbtn6.TabStop = false;
-            this.cardbtn6.Click += new System.EventHandler(this.cardbtn6_Click);
+            this.cardbtn6.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn5
             // 
@@ -180,7 +180,7 @@ namespace project_memory
             this.cardbtn5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn5.TabIndex = 12;
             this.cardbtn5.TabStop = false;
-            this.cardbtn5.Click += new System.EventHandler(this.cardbtn5_Click);
+            this.cardbtn5.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn4
             // 
@@ -192,7 +192,7 @@ namespace project_memory
             this.cardbtn4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn4.TabIndex = 11;
             this.cardbtn4.TabStop = false;
-            this.cardbtn4.Click += new System.EventHandler(this.cardbtn4_Click);
+            this.cardbtn4.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn3
             // 
@@ -204,7 +204,7 @@ namespace project_memory
             this.cardbtn3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn3.TabIndex = 10;
             this.cardbtn3.TabStop = false;
-            this.cardbtn3.Click += new System.EventHandler(this.cardbtn3_Click);
+            this.cardbtn3.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn2
             // 
@@ -216,7 +216,7 @@ namespace project_memory
             this.cardbtn2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn2.TabIndex = 9;
             this.cardbtn2.TabStop = false;
-            this.cardbtn2.Click += new System.EventHandler(this.cardbtn2_Click);
+            this.cardbtn2.Click += new System.EventHandler(this.cardclick);
             // 
             // cardbtn1
             // 
@@ -228,7 +228,7 @@ namespace project_memory
             this.cardbtn1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cardbtn1.TabIndex = 8;
             this.cardbtn1.TabStop = false;
-            this.cardbtn1.Click += new System.EventHandler(this.cardbtn1_Click);
+            this.cardbtn1.Click += new System.EventHandler(this.cardclick);
             // 
             // timeTimer
             // 
