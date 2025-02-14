@@ -225,8 +225,8 @@ namespace project_memory
             playTime++;
 
             // maak minuten en seconden van
-            minuten = playTime / 6;
-            seconden = playTime % 6;
+            minuten = playTime / 60;
+            seconden = playTime % 60;
 
             // zet het op label
             timelbl.Text = $"{minuten:D2}:{seconden:D2}";
