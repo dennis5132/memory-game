@@ -74,9 +74,9 @@ namespace project_memory
             this.currentTurnLabel.ForeColor = System.Drawing.Color.LemonChiffon;
             this.currentTurnLabel.Location = new System.Drawing.Point(12, 16);
             this.currentTurnLabel.Name = "currentTurnLabel";
-            this.currentTurnLabel.Size = new System.Drawing.Size(95, 32);
+            this.currentTurnLabel.Size = new System.Drawing.Size(105, 32);
             this.currentTurnLabel.TabIndex = 17;
-            this.currentTurnLabel.Text = "Turn 1";
+            this.currentTurnLabel.Text = "Beurt 1";
             // 
             // pointsLabel
             // 
@@ -84,11 +84,11 @@ namespace project_memory
             this.pointsLabel.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pointsLabel.ForeColor = System.Drawing.Color.LemonChiffon;
-            this.pointsLabel.Location = new System.Drawing.Point(891, 16);
+            this.pointsLabel.Location = new System.Drawing.Point(880, 16);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(117, 32);
+            this.pointsLabel.Size = new System.Drawing.Size(128, 32);
             this.pointsLabel.TabIndex = 18;
-            this.pointsLabel.Text = "0 Points";
+            this.pointsLabel.Text = "0 Punten";
             // 
             // cardbtn11
             // 

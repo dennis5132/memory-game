@@ -11,13 +11,11 @@ using System.Windows.Forms;
 
 namespace project_memory
 {
-
     public partial class Form1 : Form
     {
         private float cardCheck = 0f; // hoeveel kaarten er worden bekeken
         List<PictureBox> cardnumbers = new List<PictureBox>();
         
-
         List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
         List<int> cardpictures = new List<int>(); // waar verschillende plaatjes liggen
 
@@ -36,7 +34,6 @@ namespace project_memory
 
         int minuten;
         int seconden;
-
         public Form1()
         {
             InitializeComponent();
@@ -54,7 +51,6 @@ namespace project_memory
             cardnumbers.Add(cardbtn11);
             cardnumbers.Add(cardbtn12);
         }
-
         private void resetCard(PictureBox thisB)
         {
             if (correct.Contains(thisB) == false)
@@ -84,12 +80,10 @@ namespace project_memory
                     {
                         resetCard(cardnumbers[i]);
                     }
-                    
+              
                     currentTurn += 1;
-                    currentTurnLabel.Text = "turn " + currentTurn.ToString();
+                    currentTurnLabel.Text = "Beurt " + currentTurn.ToString();
                 }
-
-
 
                 for (int i = 0; i < cardnumbers.Count; i++) //voor elk lid in cardnumbers
                 {
@@ -142,12 +136,12 @@ namespace project_memory
                         player.Stream = Properties.Resources.rightanswer_95219;
                         player.Play();
                         currentPoints++;
-                        pointsLabel.Text = currentPoints.ToString() + " points";
+                        pointsLabel.Text = currentPoints.ToString() + " Punten";
                         if (correct.Count == 12)
                         {
                             timeTimer.Stop();
                             resetTimer.Stop();
-                            DialogResult result = MessageBox.Show($"Do you want to play again?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                            DialogResult result = MessageBox.Show($"Wil je opnieuw spelen?", "Bevestigen", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                             if (result == DialogResult.Yes)
                             {
                                 resetGame();  
@@ -160,17 +154,14 @@ namespace project_memory
                             }
                         }
                     }
-                    resetTimer.Start();
-                    
+                    resetTimer.Start();                  
                 }
             }
         }
-
         private void Form1_Activated(object sender, EventArgs e)
         {
             resetGame();
         }
-
         public void resetGame()
         {
             cardCheck = 0f;
@@ -179,7 +170,7 @@ namespace project_memory
             correct = new List<PictureBox>();
             currentPoints = 0;
             playTime = 0;
-            pointsLabel.Text = currentPoints.ToString() + " points";
+            pointsLabel.Text = currentPoints.ToString() + " Punten";
 
             for (int i = 0; i < cardnumbers.Count; i++)
             {
@@ -194,7 +185,6 @@ namespace project_memory
             }
             timeTimer.Start();
         }
-
         private void cardclick(object sender, EventArgs e)
         {
             if (sender is PictureBox clicked)
@@ -202,7 +192,6 @@ namespace project_memory
                 Cardturn(clicked);
             }
         }
-
         private void resetTimer_Tick(object sender, EventArgs e)
         {
                 cardCheck = 0f;
@@ -215,10 +204,8 @@ namespace project_memory
             resetTimer.Stop();
 
                 currentTurn += 1;
-                currentTurnLabel.Text = "turn " + currentTurn.ToString();
+                currentTurnLabel.Text = "Beurt " + currentTurn.ToString();
         }
-
-
         private void timeTimer_Tick(object sender, EventArgs e)
         {
             // komt 1 seconde bij
@@ -231,19 +218,15 @@ namespace project_memory
             // zet het op label
             timelbl.Text = $"{minuten:D2}:{seconden:D2}";
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
            
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             resetGame();
             currentTurn = 0;
-        }
-
-        
+        }       
     }
 }
 
