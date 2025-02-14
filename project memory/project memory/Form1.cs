@@ -16,7 +16,7 @@ namespace project_memory
         private float cardCheck = 0f; // hoeveel kaarten er worden bekeken
         List<PictureBox> cardnumbers = new List<PictureBox>();
         
-        List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+        List<int> picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 };
         List<int> cardpictures = new List<int>(); // waar verschillende plaatjes liggen
 
         private PictureBox firstpicture;
@@ -50,6 +50,10 @@ namespace project_memory
             cardnumbers.Add(cardbtn10);
             cardnumbers.Add(cardbtn11);
             cardnumbers.Add(cardbtn12);
+            cardnumbers.Add(cardbtn13);
+            cardnumbers.Add(cardbtn14);
+            cardnumbers.Add(cardbtn15);
+            cardnumbers.Add(cardbtn16);
         }
         private void resetCard(PictureBox thisB)
         {
@@ -114,6 +118,14 @@ namespace project_memory
                         {
                             btn.Image = Properties.Resources.varkeninmodder;
                         }
+                        if (cardpictures[i] == 7)
+                        {
+                            btn.Image = Properties.Resources.hondje_gold;
+                        }
+                        if (cardpictures[i] == 8)
+                        {
+                            btn.Image = Properties.Resources.Kat_muur;
+                        }
 
                         if (cardCheck == 1)
                         {
@@ -137,7 +149,7 @@ namespace project_memory
                         player.Play();
                         currentPoints++;
                         pointsLabel.Text = currentPoints.ToString() + " Punten";
-                        if (correct.Count == 12)
+                        if (correct.Count == 16)
                         {
                             timeTimer.Stop();
                             resetTimer.Stop();
@@ -165,7 +177,7 @@ namespace project_memory
         public void resetGame()
         {
             cardCheck = 0f;
-            picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6 };
+            picturelist = new List<int> { 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8 };
             cardpictures = new List<int>();
             correct = new List<PictureBox>();
             currentPoints = 0;

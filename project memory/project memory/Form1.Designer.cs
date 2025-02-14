@@ -47,6 +47,10 @@ namespace project_memory
             this.cardbtn1 = new System.Windows.Forms.PictureBox();
             this.timeTimer = new System.Windows.Forms.Timer(this.components);
             this.timelbl = new System.Windows.Forms.Label();
+            this.cardbtn13 = new System.Windows.Forms.PictureBox();
+            this.cardbtn14 = new System.Windows.Forms.PictureBox();
+            this.cardbtn15 = new System.Windows.Forms.PictureBox();
+            this.cardbtn16 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn9)).BeginInit();
@@ -59,6 +63,10 @@ namespace project_memory
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn16)).BeginInit();
             this.SuspendLayout();
             // 
             // resetTimer
@@ -136,7 +144,7 @@ namespace project_memory
             // 
             // cardbtn8
             // 
-            this.cardbtn8.AccessibleName = "pbx8";
+            this.cardbtn8.AccessibleName = "";
             this.cardbtn8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn8.Location = new System.Drawing.Point(336, 416);
             this.cardbtn8.Name = "cardbtn8";
@@ -148,7 +156,7 @@ namespace project_memory
             // 
             // cardbtn7
             // 
-            this.cardbtn7.AccessibleName = "pbx7";
+            this.cardbtn7.AccessibleName = "";
             this.cardbtn7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn7.Location = new System.Drawing.Point(136, 416);
             this.cardbtn7.Name = "cardbtn7";
@@ -160,7 +168,7 @@ namespace project_memory
             // 
             // cardbtn6
             // 
-            this.cardbtn6.AccessibleName = "pbx6";
+            this.cardbtn6.AccessibleName = "";
             this.cardbtn6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn6.Location = new System.Drawing.Point(536, 257);
             this.cardbtn6.Name = "cardbtn6";
@@ -172,7 +180,7 @@ namespace project_memory
             // 
             // cardbtn5
             // 
-            this.cardbtn5.AccessibleName = "pbx5";
+            this.cardbtn5.AccessibleName = "";
             this.cardbtn5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn5.Location = new System.Drawing.Point(336, 257);
             this.cardbtn5.Name = "cardbtn5";
@@ -184,7 +192,7 @@ namespace project_memory
             // 
             // cardbtn4
             // 
-            this.cardbtn4.AccessibleName = "pbx4";
+            this.cardbtn4.AccessibleName = "";
             this.cardbtn4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn4.Location = new System.Drawing.Point(136, 257);
             this.cardbtn4.Name = "cardbtn4";
@@ -196,7 +204,7 @@ namespace project_memory
             // 
             // cardbtn3
             // 
-            this.cardbtn3.AccessibleName = "pbx3";
+            this.cardbtn3.AccessibleName = "";
             this.cardbtn3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn3.Location = new System.Drawing.Point(536, 98);
             this.cardbtn3.Name = "cardbtn3";
@@ -208,7 +216,7 @@ namespace project_memory
             // 
             // cardbtn2
             // 
-            this.cardbtn2.AccessibleName = "pbx2";
+            this.cardbtn2.AccessibleName = "";
             this.cardbtn2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn2.Location = new System.Drawing.Point(336, 98);
             this.cardbtn2.Name = "cardbtn2";
@@ -220,7 +228,7 @@ namespace project_memory
             // 
             // cardbtn1
             // 
-            this.cardbtn1.AccessibleName = "pbx1";
+            this.cardbtn1.AccessibleName = "";
             this.cardbtn1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cardbtn1.Location = new System.Drawing.Point(136, 98);
             this.cardbtn1.Name = "cardbtn1";
@@ -245,12 +253,60 @@ namespace project_memory
             this.timelbl.TabIndex = 23;
             this.timelbl.Text = "00:00";
             // 
+            // cardbtn13
+            // 
+            this.cardbtn13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn13.Location = new System.Drawing.Point(136, 575);
+            this.cardbtn13.Name = "cardbtn13";
+            this.cardbtn13.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn13.TabIndex = 24;
+            this.cardbtn13.TabStop = false;
+            this.cardbtn13.Click += new System.EventHandler(this.cardclick);
+            // 
+            // cardbtn14
+            // 
+            this.cardbtn14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn14.Location = new System.Drawing.Point(336, 575);
+            this.cardbtn14.Name = "cardbtn14";
+            this.cardbtn14.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn14.TabIndex = 25;
+            this.cardbtn14.TabStop = false;
+            this.cardbtn14.Click += new System.EventHandler(this.cardclick);
+            // 
+            // cardbtn15
+            // 
+            this.cardbtn15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn15.Location = new System.Drawing.Point(536, 575);
+            this.cardbtn15.Name = "cardbtn15";
+            this.cardbtn15.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn15.TabIndex = 26;
+            this.cardbtn15.TabStop = false;
+            this.cardbtn15.Click += new System.EventHandler(this.cardclick);
+            // 
+            // cardbtn16
+            // 
+            this.cardbtn16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.cardbtn16.Location = new System.Drawing.Point(736, 575);
+            this.cardbtn16.Name = "cardbtn16";
+            this.cardbtn16.Size = new System.Drawing.Size(150, 130);
+            this.cardbtn16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cardbtn16.TabIndex = 27;
+            this.cardbtn16.TabStop = false;
+            this.cardbtn16.Click += new System.EventHandler(this.cardclick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::project_memory.Properties.Resources.grass_block;
-            this.ClientSize = new System.Drawing.Size(1020, 571);
+            this.ClientSize = new System.Drawing.Size(1020, 738);
+            this.Controls.Add(this.cardbtn16);
+            this.Controls.Add(this.cardbtn15);
+            this.Controls.Add(this.cardbtn14);
+            this.Controls.Add(this.cardbtn13);
             this.Controls.Add(this.timelbl);
             this.Controls.Add(this.cardbtn11);
             this.Controls.Add(this.cardbtn10);
@@ -282,6 +338,10 @@ namespace project_memory
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cardbtn1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cardbtn16)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,6 +366,10 @@ namespace project_memory
         private System.Windows.Forms.PictureBox cardbtn11;
         private System.Windows.Forms.Timer timeTimer;
         private System.Windows.Forms.Label timelbl;
+        private System.Windows.Forms.PictureBox cardbtn13;
+        private System.Windows.Forms.PictureBox cardbtn14;
+        private System.Windows.Forms.PictureBox cardbtn15;
+        private System.Windows.Forms.PictureBox cardbtn16;
     }
 }
 
